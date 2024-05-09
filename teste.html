@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-container input[type="email"],
+        .form-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #3e8e41;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Orkut</h1>
+        </div>
+        <div class="form-container">
+            <form action="#">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Salvar as minhas informações neste computador</label>
+                </div>
+                <button type="submit">Login</button>
+                <a href="#">Não consegue acessar a sua conta?</a>
+                <a href="#">Ainda não é membro?</a>
+            </form>
+        </div>
+        <div class="footer">
+            <p>2017 Orkut - Sobre o Orkut - Centro de segurança - Privacidade - Termos</p>
+        </div>
+    </div>
+</body>
+
+</html>

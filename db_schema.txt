@@ -1,0 +1,41 @@
+01. Users Table:
+	UserID (Primary Key)
+	Username
+	Email
+	Password
+	Full Name
+	Date of Birth
+	Profile Picture (URL or file path)
+	Bio
+	Registration Date
+	Last Login Date
+02. Posts Table:
+	PostID (Primary Key)
+	UserID (Foreign Key referencing Users table)
+	Content (Text or media)
+	Post Date
+	Likes Count
+	Comments Count
+03. Comments Table:
+	CommentID (Primary Key)
+	PostID (Foreign Key referencing Posts table)
+	UserID (Foreign Key referencing Users table)
+	Comment Text
+	Comment Date
+04. Likes Table:
+	LikeID (Primary Key)
+	PostID (Foreign Key referencing Posts table)
+	UserID (Foreign Key referencing Users table)
+	Like Date
+05. Friend Requests Table:
+	RequestID (Primary Key)
+	SenderID (Foreign Key referencing Users table)
+	ReceiverID (Foreign Key referencing Users table)
+	Request Date
+	Status (e.g., pending, accepted, declined)
+06. Friendships Table:
+	FriendshipID (Primary Key)
+	UserID1 (Foreign Key referencing Users table)
+	UserID2 (Foreign Key referencing Users table)
+	Friendship Date
+	Status (e.g., active, deactivated)

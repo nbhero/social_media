@@ -1,0 +1,11 @@
+@media screen and (max-width: 1080px) {
+    .social-container p {
+        font-size: .8em;
+    }
+    .social-container img {
+        width: 200px;
+    }
+    .login button {
+        margin-top: 20px;
+    }
+}
